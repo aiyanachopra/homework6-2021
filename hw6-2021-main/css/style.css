@@ -1,0 +1,157 @@
+body{
+    font-family: "Alegreya Sans SC", serif;
+    background-image: url("../images/concrete_seamless.png") ;
+    background-color: #f1f1f1;
+    
+
+}
+
+#logo{
+    animation-duration: 5s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes slidein {
+    from {
+    margin: auto;
+      opacity: 0;
+      width: 50px;
+    }
+  
+    to {
+        margin: auto;
+      opacity: 1;
+      width: 425px;
+    }
+  }
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+
+
+a { 
+    color: blue;
+}
+
+.nav_links{
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+
+}
+
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-basis: 450px;
+}
+
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: stretch;
+  
+}
+
+.gallery > img{
+    width: 300px;
+    border-style: solid;
+    border-color: #50C7C7;
+    border-width: 10px;
+    margin: 10px;
+}
+
+
+@media screen and (min-width: 850px){
+
+    #logo{
+        
+        animation-duration: 5s;
+        animation-name: slidein;
+        animation-iteration-count: 1;
+    }
+    
+    
+    @keyframes slidein {
+        from {
+        margin: left;
+          opacity: 0;
+          width: 50px;
+        }
+      
+        to {
+        margin: left;
+          opacity: 1;
+          width: 425px;
+        }
+      }
+
+      header{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+  
+ 
+
+    }
+
+    .nav_links{
+        flex-direction: row;
+    }
+
+    .card{
+        display: flex;
+  align-items: center;
+  justify-content: center;
+
+        
+    }
+
+    .card_big{
+        height: 250px;
+    }
+
+
+    @media (prefers-reduced-motion) {
+        * {
+            animation-duration: 0.001ms !important;
+            animation-iteration-count: 1 !important; 
+            transition-duration: 0.001ms !important;
+          
+        }  
+    }  
+
+    @media print {
+
+        body {
+          margin: 0;
+          color: #000;
+          background-color: #f1f1f1;
+        }
+
+       
+}
+}
