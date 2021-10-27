@@ -30,8 +30,8 @@ body{
 header{
     display: flex;
     align-items: center;
-    position: static;
     flex-direction: column;
+    position: static;
     
 
 }
@@ -90,38 +90,45 @@ a {
     margin: 10px;
 }
 
+#logo{
+        
+    animation-duration: 5s;
+    animation-name: grow;
+    animation-iteration-count: 1;
+}
+
+
+@keyframes grow {
+    from {
+    margin: left;
+      opacity: 0;
+      width: 50px;
+    }
+  
+    to {
+    margin: left;
+      opacity: 1;
+      width: 425px;
+    }
+  }
+
+  .thumb{
+      display: none;
+  }
 
 @media screen and (min-width: 850px){
 
-    #logo{
-        
-        animation-duration: 5s;
-        animation-name: slidein;
-        animation-iteration-count: 1;
-    }
     
-    
-    @keyframes slidein {
-        from {
-        margin: left;
-          opacity: 0;
-          width: 50px;
-        }
-      
-        to {
-        margin: left;
-          opacity: 1;
-          width: 425px;
-        }
-      }
+
+  
 
       .top-header{
-        display: flex;
         flex-direction: row;
         justify-content: space-between;
         position: fixed;
         width: 100%;
     }
+
 
     .nav_links{
         flex-direction: row;
