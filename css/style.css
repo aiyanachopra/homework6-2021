@@ -137,6 +137,7 @@ a {
     .card{
         flex-basis: 250px;
     }
+}
 
 
 
@@ -150,16 +151,17 @@ a {
         }  
     }  
 
-    @media print {
+    @media print{
 
-        body {
-          margin: 0;
-          color: #000;
-          background-color: #f1f1f1;
+        header{
+            display: flex;
+            flex-direction: column;
         }
 
-        .thumb{
-            display: inline;
+        body{
+            background-image: none;
+            background-color: #ffffff;
+
         }
 
         nav{
@@ -173,6 +175,10 @@ a {
             justify-content: space-around;
         }
 
+        .thumb{
+            display: inline;
+        }
+
         .card{
             flex-basis: 250px;
             border-style: solid;
@@ -180,20 +186,9 @@ a {
             border-color: #45addd;
         }
 
-        header{
-            display: flex;
-            flex-direction: column;
-        }
-
-        body{
-            background-image: none;
-            background-color: #ffffff;
-
-        }
-
         .pricing{
             flex-direction: row;
-            flex-wrap: wrap;
+            flex-wrap: nowrap;
             align-items: flex-end;
         }
 
@@ -206,5 +201,4 @@ a {
         }
 
        
-}
 }
